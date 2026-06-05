@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rafie Habibi Fauzi | Portfolio</title>
+    
+    <!-- Tailwind CSS (Loads CDN runtime, configured dynamically in script.js) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Style Sheet (Handles scrollbars, animations, themes, and dynamic effects) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom JavaScript (Handles interactive logic, loaded defer to run after DOM is ready) -->
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-bgmain dark:bg-darkBgmain text-textmuted dark:text-darkTextmuted font-sans antialiased selection:bg-accent selection:text-white overflow-x-hidden transition-colors duration-300">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 dark:bg-darkBgmain/80 backdrop-blur-md border-b border-bordercolor dark:border-darkBordercolor transition-all duration-300 shadow-sm" data-aos="fade-down" data-aos-duration="800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand logo -->
+                <div class="flex-shrink-0 font-mono text-textmain dark:text-darkTextmain font-bold text-xl tracking-tighter hover:text-accent transition-colors">
+                    <a href="#home">&gt;_ Rafie<span class="text-accent">.</span></a>
+                </div>
+                
+                <!-- Desktop Menu & Theme Toggle -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                    <a href="#home" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">Home</a>
+                    <a href="#about" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">About</a>
+                    <a href="#experience" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">Experience</a>
+                    <a href="#skills" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="nav-link text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors duration-300">Contact</a>
+                    
+                    <!-- Theme Toggle Switch -->
+                    <button id="theme-toggle" class="p-2 rounded-lg text-textmain dark:text-darkTextmain hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none" aria-label="Toggle Dark Mode">
+                        <i id="theme-toggle-icon" class="ph ph-moon text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button & Mobile Toggle -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <!-- Theme Toggle for Mobile -->
+                    <button id="theme-toggle-mobile" class="p-2 rounded-lg text-textmain dark:text-darkTextmain hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none" aria-label="Toggle Dark Mode">
+                        <i id="theme-toggle-icon-mobile" class="ph ph-moon text-2xl"></i>
+                    </button>
+                    
+                    <button id="mobile-menu-btn" class="text-textmain dark:text-darkTextmain hover:text-accent focus:outline-none transition-colors">
+                        <i class="ph ph-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-darkBgmain border-b border-bordercolor dark:border-darkBordercolor shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center flex flex-col font-semibold">
+                <a href="#home" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">Home</a>
+                <a href="#about" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">About</a>
+                <a href="#experience" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">Experience</a>
+                <a href="#skills" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-textmain dark:text-darkTextmain hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden bg-bgsec dark:bg-darkBgsec transition-colors duration-300">
+        <!-- Animated Decorative Background Circles -->
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/15 dark:bg-accent/10 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[80px] opacity-70 animate-float"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-300/20 dark:bg-yellow-500/5 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[100px] opacity-70 animate-float-delayed"></div>
+        <div class="absolute top-1/2 left-10 text-accent/20 dark:text-accent/10 animate-bounce delay-150"><i class="ph ph-brackets-curly text-6xl"></i></div>
+        <div class="absolute bottom-32 right-20 text-textmain/10 dark:text-darkTextmain/5 animate-pulse"><i class="ph ph-hard-drives text-8xl"></i></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <p class="font-mono text-accent font-bold mb-4 tracking-wide uppercase" data-aos="fade-up">Hello, I am</p>
+            <h1 class="text-5xl sm:text-6xl md:text-8xl font-black text-textmain dark:text-darkTextmain mb-4 tracking-tight" data-aos="fade-up" data-aos-delay="100">
+                Rafie Habibi.
+            </h1>
+            <h2 class="text-xl sm:text-2xl md:text-3xl text-textmuted dark:text-darkTextmuted font-semibold mb-6 min-h-[40px] md:min-h-[50px]" data-aos="fade-up" data-aos-delay="200">
+                <span id="typing-text">Building Your IT Infrastructure</span><span class="typing-cursor"></span>
+            </h2>
+            <p class="mt-4 text-base md:text-lg text-textmuted dark:text-darkTextmuted max-w-2xl mx-auto mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+                MTCNA and CCNA certified student with hands-on experience in managing network systems and IT automation. Dedicated to building reliable and secure infrastructure.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6" data-aos="zoom-in" data-aos-delay="400">
+                <a href="#projects" class="px-8 py-3 bg-white dark:bg-darkBgsec border-2 border-textmain dark:border-darkBordercolor text-textmain dark:text-darkTextmain font-bold rounded shadow-[4px_4px_0px_0px_rgba(17,24,39,1)] dark:shadow-[4px_4px_0px_0px_rgba(249,115,22,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 w-full sm:w-auto text-center">
+                    View My Projects
+                </a>
+                <a href="#contact" class="px-8 py-3 bg-accent border-2 border-accent text-white font-bold rounded shadow-[4px_4px_0px_0px_rgba(234,88,12,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 w-full sm:w-auto text-center">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white dark:bg-darkBgmain relative overflow-hidden transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-black text-textmain dark:text-darkTextmain mb-12 flex items-center font-mono" data-aos="fade-right">
+                <span class="text-accent mr-3">01.</span> About Me
+                <div class="ml-6 flex-grow h-px bg-bordercolor dark:bg-darkBordercolor"></div>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-textmuted dark:text-darkTextmuted leading-relaxed text-lg" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        I am a Computer Engineering student at <strong>Universitas Brawijaya</strong> with a current GPA of <span class="text-accent font-bold">3.82</span>. I have a strong foundation and keen interest in Network Operations and IT Infrastructure.
+                    </p>
+                    <p>
+                        I am also highly interested in applying technical problem-solving skills, focusing on data centers, network systems, and the integration of IoT (Internet of Things) devices.
+                    </p>
+                </div>
+                <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+                    <!-- Background accent square -->
+                    <div class="absolute inset-0 bg-accent translate-x-4 translate-y-4 rounded-xl transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
+                    <!-- Photo Image with dark mode border compatibility -->
+                    <img src="foto linkedin.jpg" alt="Rafie Profile" class="relative z-10 rounded-xl shadow-xl filter grayscale group-hover:grayscale-0 transition-all duration-500 w-full object-cover border-4 border-white dark:border-darkBgsec">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-bgsec dark:bg-darkBgsec transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-black text-textmain dark:text-darkTextmain mb-16 flex items-center font-mono" data-aos="fade-right">
+                <span class="text-accent mr-3">02.</span> Experience
+                <div class="ml-6 flex-grow h-px bg-bordercolor dark:bg-darkBordercolor"></div>
+            </h2>
+            
+            <div class="space-y-12 border-l-4 border-accent/30 dark:border-accent/15 pl-6 md:pl-8 ml-3 md:ml-4 relative">
+                
+                <!-- Experience 1 -->
+                <div class="experience-item relative group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-marker absolute -left-[37px] md:-left-[45px] top-1 h-6 w-6 rounded-full bg-white dark:bg-darkBgsec border-4 border-accent shadow-md"></div>
+                    <div class="bg-white dark:bg-darkBgmain p-6 rounded-xl shadow-sm border border-bordercolor dark:border-darkBordercolor group-hover:shadow-lg group-hover:border-accent/50 dark:group-hover:border-accent/50 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain">Network Operation Center (NOC)</h3>
+                        <p class="text-accent font-mono text-sm font-semibold mb-4">PT Nale System Integrator</p>
+                        <ul class="list-disc list-inside text-textmuted dark:text-darkTextmuted space-y-2">
+                            <li>Monitored network <span class="font-semibold text-textmain dark:text-darkTextmain">uptime</span>, performance, and security across 2+ client sites.</li>
+                            <li>Identified and resolved Tier 1 network incidents and connectivity issues.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-item relative group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-marker absolute -left-[37px] md:-left-[45px] top-1 h-6 w-6 rounded-full bg-white dark:bg-darkBgsec border-4 border-textmain dark:border-darkTextmuted shadow-md"></div>
+                    <div class="bg-white dark:bg-darkBgmain p-6 rounded-xl shadow-sm border border-bordercolor dark:border-darkBordercolor group-hover:shadow-lg group-hover:border-accent/50 dark:group-hover:border-accent/50 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain">Staff IT Infrastructure</h3>
+                        <p class="text-accent font-mono text-sm font-semibold mb-4">PT Cipta Harmoni Lestari</p>
+                        <ul class="list-disc list-inside text-textmuted dark:text-darkTextmuted space-y-2">
+                            <li>Successfully deployed and integrated enterprise IT networks and IoT devices.</li>
+                            <li>Configured IT systems, network hardware, and Smart Home IoT devices.</li>
+                            <li>Maintained computer and operational network infrastructure.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="experience-item relative group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="experience-marker absolute -left-[37px] md:-left-[45px] top-1 h-6 w-6 rounded-full bg-white dark:bg-darkBgsec border-4 border-textmain dark:border-darkTextmuted shadow-md"></div>
+                    <div class="bg-white dark:bg-darkBgmain p-6 rounded-xl shadow-sm border border-bordercolor dark:border-darkBordercolor group-hover:shadow-lg group-hover:border-accent/50 dark:group-hover:border-accent/50 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain">Practicum & Laboratory Assistant</h3>
+                        <p class="text-accent font-mono text-sm font-semibold mb-4">Universitas Brawijaya</p>
+                        <ul class="list-disc list-inside text-textmuted dark:text-darkTextmuted space-y-2">
+                            <li>Taught and supervised a total of 120+ students across three practicum courses.</li>
+                            <li>Guided students in microcontroller programming using C and C++.</li>
+                            <li>Managed laboratory operations, inventory, and handled lab equipment troubleshooting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-white dark:bg-darkBgmain overflow-hidden transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-black text-textmain dark:text-darkTextmain mb-12 flex items-center font-mono" data-aos="fade-right">
+                <span class="text-accent mr-3">03.</span> Skills & Certifications
+                <div class="ml-6 flex-grow h-px bg-bordercolor dark:bg-darkBordercolor"></div>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Networking & Tools -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                        <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-hard-drives text-2xl"></i></div>
+                        Networking & Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">MikroTik</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Cisco</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">UniFi</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">PNETLab</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">GNS3</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Packet Tracer</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Sophos</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Proxmox</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">VMware</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Docker</span>
+                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Fortigate</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Certs -->
+                <div class="space-y-10">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-code text-2xl"></i></div>
+                            Programming
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">Python</span>
+                            <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">C++</span>
+                            <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">C Language</span>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-certificate text-2xl"></i></div>
+                            Certifications
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-accent text-white font-bold rounded-lg shadow-md hover:scale-105 transition-transform cursor-default flex items-center"><i class="ph-fill ph-check-circle mr-1"></i> MTCNA</span>
+                            <span class="px-4 py-2 bg-accent text-white font-bold rounded-lg shadow-md hover:scale-105 transition-transform cursor-default flex items-center"><i class="ph-fill ph-check-circle mr-1"></i> CCNA</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-lg border-2 border-bordercolor dark:border-darkBordercolor cursor-default">TOEFL (507)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-bgsec dark:bg-darkBgsec transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-black text-textmain dark:text-darkTextmain mb-12 flex items-center font-mono" data-aos="fade-right">
+                <span class="text-accent mr-3">04.</span> Featured Projects
+                <div class="ml-6 flex-grow h-px bg-bordercolor dark:bg-darkBordercolor"></div>
+            </h2>
+
+            <!-- Project Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn px-6 py-2 bg-accent text-white font-bold rounded-full border-2 border-accent transition-all duration-300 shadow-md hover:-translate-y-0.5" data-filter="all">All Projects</button>
+                <button class="filter-btn px-6 py-2 bg-white text-textmain font-bold rounded-full border-2 border-bordercolor dark:bg-darkBgsec dark:text-darkTextmain dark:border-darkBordercolor hover:border-accent hover:text-accent transition-all duration-300 hover:-translate-y-0.5" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn px-6 py-2 bg-white text-textmain font-bold rounded-full border-2 border-bordercolor dark:bg-darkBgsec dark:text-darkTextmain dark:border-darkBordercolor hover:border-accent hover:text-accent transition-all duration-300 hover:-translate-y-0.5" data-filter="iot">IoT & Hardware</button>
+                <button class="filter-btn px-6 py-2 bg-white text-textmain font-bold rounded-full border-2 border-bordercolor dark:bg-darkBgsec dark:text-darkTextmain dark:border-darkBordercolor hover:border-accent hover:text-accent transition-all duration-300 hover:-translate-y-0.5" data-filter="networking">Networking</button>
+                <button class="filter-btn px-6 py-2 bg-white text-textmain font-bold rounded-full border-2 border-bordercolor dark:bg-darkBgsec dark:text-darkTextmain dark:border-darkBordercolor hover:border-accent hover:text-accent transition-all duration-300 hover:-translate-y-0.5" data-filter="web">Web Dev</button>
+            </div>
+
+            <!-- Responsive Projects Grid (Optimized for filtering layout stability) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 (ML for Oxygen) -->
+                <div class="project-card-container transition-all duration-300" data-tags="ml" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card bg-white dark:bg-darkBgmain rounded-xl overflow-hidden border border-bordercolor dark:border-darkBordercolor flex flex-col h-full shadow-sm hover:shadow-lg">
+                        <div class="h-48 overflow-hidden relative border-b border-bordercolor dark:border-darkBordercolor">
+                            <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="assets/images/ml_oxygen.png" alt="ML Dissolved Oxygen Prediction" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow relative">
+                            <div class="absolute top-0 right-6 -translate-y-1/2 p-3 bg-textmain dark:bg-darkBgsec text-white rounded-full hover:bg-accent transition-colors shadow-lg border border-bordercolor/10">
+                                <i class="ph ph-brain text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain mb-3 mt-2 hover:text-accent transition-colors">ML for Predicting Dissolved Oxygen</h3>
+                            <p class="text-textmuted dark:text-darkTextmuted text-sm mb-6 flex-grow leading-relaxed">Developed a Machine Learning model to predict dissolved oxygen levels in water to assist and optimize fish farming (aquaculture).</p>
+                            <div class="flex justify-between items-center mt-auto pt-4 border-t border-bordercolor/50 dark:border-darkBordercolor/50">
+                                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold text-accent">
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">Python</span>
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">Machine Learning</span>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1UiR0v9XVGxxb7yRNn3RBktEpytttQ2clitbtFq8UJ5c/edit?usp=sharing" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors" title="View Document"><i class="ph ph-file-text text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Smart Autonomous Car) -->
+                <div class="project-card-container transition-all duration-300" data-tags="iot" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card bg-white dark:bg-darkBgmain rounded-xl overflow-hidden border border-bordercolor dark:border-darkBordercolor flex flex-col h-full shadow-sm hover:shadow-lg">
+                        <div class="h-48 overflow-hidden relative border-b border-bordercolor dark:border-darkBordercolor">
+                            <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="assets/images/smart_car.png" alt="Smart Autonomous Car" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow relative">
+                            <div class="absolute top-0 right-6 -translate-y-1/2 p-3 bg-textmain dark:bg-darkBgsec text-white rounded-full hover:bg-accent transition-colors shadow-lg border border-bordercolor/10">
+                                <i class="ph ph-car-profile text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain mb-3 mt-2 hover:text-accent transition-colors">Smart Autonomous Car</h3>
+                            <p class="text-textmuted dark:text-darkTextmuted text-sm mb-6 flex-grow leading-relaxed">Microcontroller-based smart vehicle programmed to move precisely following predetermined GPS coordinates.</p>
+                            <div class="flex justify-between items-center mt-auto pt-4 border-t border-bordercolor/50 dark:border-darkBordercolor/50">
+                                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold text-accent">
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">C/C++</span>
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">IoT</span>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1UiR0v9XVGxxb7yRNn3RBktEpytttQ2clitbtFq8UJ5c/edit?usp=sharing" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors" title="View Document"><i class="ph ph-file-text text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Weather Dashboard) -->
+                <div class="project-card-container transition-all duration-300" data-tags="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card bg-white dark:bg-darkBgmain rounded-xl overflow-hidden border border-bordercolor dark:border-darkBordercolor flex flex-col h-full shadow-sm hover:shadow-lg">
+                        <div class="h-48 overflow-hidden relative border-b border-bordercolor dark:border-darkBordercolor">
+                            <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="assets/images/weather_dashboard.png" alt="Weather Dashboard" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow relative">
+                            <div class="absolute top-0 right-6 -translate-y-1/2 p-3 bg-textmain dark:bg-darkBgsec text-white rounded-full hover:bg-accent transition-colors shadow-lg border border-bordercolor/10">
+                                <i class="ph ph-cloud-sun text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain mb-3 mt-2 hover:text-accent transition-colors">Weather Dashboard</h3>
+                            <p class="text-textmuted dark:text-darkTextmuted text-sm mb-6 flex-grow leading-relaxed">Interactive web dashboard displaying real-time weather data based on location search using REST API integration.</p>
+                            <div class="flex justify-between items-center mt-auto pt-4 border-t border-bordercolor/50 dark:border-darkBordercolor/50">
+                                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold text-accent">
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">HTML/JS</span>
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">API</span>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1UiR0v9XVGxxb7yRNn3RBktEpytttQ2clitbtFq8UJ5c/edit?usp=sharing" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors" title="View Document"><i class="ph ph-file-text text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Data Center Simulation) -->
+                <div class="project-card-container transition-all duration-300" data-tags="networking" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card bg-white dark:bg-darkBgmain rounded-xl overflow-hidden border border-bordercolor dark:border-darkBordercolor flex flex-col h-full shadow-sm hover:shadow-lg">
+                        <div class="h-48 overflow-hidden relative border-b border-bordercolor dark:border-darkBordercolor">
+                            <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="assets/images/datacenter_sim.png" alt="Data Center Simulation" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow relative">
+                            <div class="absolute top-0 right-6 -translate-y-1/2 p-3 bg-textmain dark:bg-darkBgsec text-white rounded-full hover:bg-accent transition-colors shadow-lg border border-bordercolor/10">
+                                <i class="ph ph-database text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain mb-3 mt-2 hover:text-accent transition-colors">Data Center Simulation</h3>
+                            <p class="text-textmuted dark:text-darkTextmuted text-sm mb-6 flex-grow leading-relaxed">Network simulation using Virtual Machines (VM) implementing the LAMP stack method and client configuration.</p>
+                            <div class="flex justify-between items-center mt-auto pt-4 border-t border-bordercolor/50 dark:border-darkBordercolor/50">
+                                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold text-accent">
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">VMware</span>
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">LAMP</span>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1UiR0v9XVGxxb7yRNn3RBktEpytttQ2clitbtFq8UJ5c/edit?usp=sharing" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors" title="View Document"><i class="ph ph-file-text text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Smart Dehumidifier) -->
+                <div class="project-card-container transition-all duration-300" data-tags="iot networking" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card bg-white dark:bg-darkBgmain rounded-xl overflow-hidden border border-bordercolor dark:border-darkBordercolor flex flex-col h-full shadow-sm hover:shadow-lg">
+                        <div class="h-48 overflow-hidden relative border-b border-bordercolor dark:border-darkBordercolor">
+                            <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="assets/images/dehumidifier_iot.png" alt="Smart Dehumidifier IoT" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow relative">
+                            <div class="absolute top-0 right-6 -translate-y-1/2 p-3 bg-textmain dark:bg-darkBgsec text-white rounded-full hover:bg-accent transition-colors shadow-lg border border-bordercolor/10">
+                                <i class="ph ph-drop text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-textmain dark:text-darkTextmain mb-3 mt-2 hover:text-accent transition-colors">Smart Dehumidifier IoT</h3>
+                            <p class="text-textmuted dark:text-darkTextmuted text-sm mb-6 flex-grow leading-relaxed">IoT-based smart room dehumidifier device that can be monitored and controlled directly via smartphone.</p>
+                            <div class="flex justify-between items-center mt-auto pt-4 border-t border-bordercolor/50 dark:border-darkBordercolor/50">
+                                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold text-accent">
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">IoT</span>
+                                    <span class="bg-orange-50 dark:bg-orange-950/20 px-2 py-1 rounded">Networking</span>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1UiR0v9XVGxxb7yRNn3RBktEpytttQ2clitbtFq8UJ5c/edit?usp=sharing" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors" title="View Document"><i class="ph ph-file-text text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white dark:bg-darkBgmain relative transition-colors duration-300">
+        <!-- Floating ambient shapes -->
+        <div class="absolute top-10 left-10 text-accent/20 dark:text-accent/5 animate-spin-slow duration-[10000ms]"><i class="ph-fill ph-circle-dashed text-6xl"></i></div>
+        <div class="absolute bottom-10 right-10 text-textmain/10 dark:text-darkTextmain/5 animate-bounce delay-500"><i class="ph-fill ph-triangle text-6xl"></i></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-sm font-mono font-bold text-accent mb-4 tracking-widest uppercase" data-aos="fade-up">05. What's Next?</h2>
+            <h2 class="text-4xl md:text-5xl font-black text-textmain dark:text-darkTextmain mb-6" data-aos="fade-up" data-aos-delay="100">Get In Touch</h2>
+            <p class="text-textmuted dark:text-darkTextmuted max-w-xl mx-auto mb-10 text-lg" data-aos="fade-up" data-aos-delay="200">
+                I am always open to new opportunities in IT Infrastructure, Networking, and IoT. Whether you have a technical question or just want to say hi, feel free to reach out!
+            </p>
+            
+            <!-- Social profiles -->
+            <div class="flex justify-center space-x-8 mb-12" data-aos="zoom-in" data-aos-delay="300">
+                <a href="mailto:mrafiehabibi01@gmail.com" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors transform hover:-translate-y-2 hover:scale-110 duration-300" title="Email">
+                    <i class="ph-fill ph-envelope-simple text-4xl drop-shadow-md"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rafiehabibi/" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors transform hover:-translate-y-2 hover:scale-110 duration-300" title="LinkedIn">
+                    <i class="ph-fill ph-linkedin-logo text-4xl drop-shadow-md"></i>
+                </a>
+                <a href="https://github.com/aheifartp" target="_blank" class="text-textmain dark:text-darkTextmain hover:text-accent dark:hover:text-accent transition-colors transform hover:-translate-y-2 hover:scale-110 duration-300" title="GitHub">
+                    <i class="ph-fill ph-github-logo text-4xl drop-shadow-md"></i>
+                </a>
+            </div>
+
+            <!-- Formspree Contact Form (AJAX enabled in script.js) -->
+            <!-- GANTI URL 'YOUR_ID_HERE' DI BAWAH DENGAN URL DARI FORMSPREE MILIKMU -->
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="max-w-md mx-auto space-y-5 text-left bg-white dark:bg-darkBgsec p-8 rounded-2xl shadow-xl border border-bordercolor dark:border-darkBordercolor transition-colors duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                    <label class="block text-textmain dark:text-darkTextmain font-bold text-sm mb-2" for="name">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-bgsec dark:bg-darkBgmain border-2 border-bordercolor dark:border-darkBordercolor rounded-lg text-textmain dark:text-darkTextmain focus:outline-none focus:border-accent focus:bg-white dark:focus:bg-darkBgsec transition-colors" placeholder="Your Name">
+                </div>
+                <div>
+                    <label class="block text-textmain dark:text-darkTextmain font-bold text-sm mb-2" for="email">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-bgsec dark:bg-darkBgmain border-2 border-bordercolor dark:border-darkBordercolor rounded-lg text-textmain dark:text-darkTextmain focus:outline-none focus:border-accent focus:bg-white dark:focus:bg-darkBgsec transition-colors" placeholder="Your Email">
+                </div>
+                <div>
+                    <label class="block text-textmain dark:text-darkTextmain font-bold text-sm mb-2" for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-bgsec dark:bg-darkBgmain border-2 border-bordercolor dark:border-darkBordercolor rounded-lg text-textmain dark:text-darkTextmain focus:outline-none focus:border-accent focus:bg-white dark:focus:bg-darkBgsec transition-colors resize-none" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 mt-4 bg-textmain dark:bg-accent text-white font-bold rounded-lg hover:bg-accent dark:hover:bg-accentDark shadow-[4px_4px_0px_0px_rgba(234,88,12,0.3)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-bordercolor dark:border-darkBordercolor bg-bgsec dark:bg-darkBgsec transition-colors duration-300">
+        <p class="text-textmuted dark:text-darkTextmuted text-sm font-mono font-medium">
+            Designed & Built by <a href="https://github.com/aheifartp" target="_blank" class="text-textmain dark:text-darkTextmain font-bold hover:text-accent dark:hover:text-accent hover:underline transition-colors">Muhammad Rafie Habibi Fauzi</a>
+        </p>
+    </footer>
+
+    <!-- AOS Animation Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
