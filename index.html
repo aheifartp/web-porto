@@ -196,40 +196,79 @@
             </h2>
             
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Networking & Tools -->
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
-                        <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-hard-drives text-2xl"></i></div>
-                        Networking & Tools
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">MikroTik</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Cisco</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">UniFi</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">PNETLab</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">GNS3</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Packet Tracer</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Sophos</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Proxmox</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">VMware</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Docker</span>
-                        <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Fortigate</span>
+                <!-- Left Column: IoT & Networking -->
+                <div class="space-y-10">
+                    <!-- IoT & Embedded Systems -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-cpu text-2xl"></i></div>
+                            IoT & Embedded Systems
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Arduino</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Microcontrollers</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Sensors Integration</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">GPS & Compass (QMC5883)</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Ultrasonic (HC-SR04)</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">PID Control</span>
+                        </div>
+                    </div>
+
+                    <!-- Networking & Infrastructure -->
+                    <div data-aos="fade-up" data-aos-delay="150">
+                        <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-hard-drives text-2xl"></i></div>
+                            Networking & Infrastructure
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">MikroTik</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Cisco</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">UniFi</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Sophos</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Routing & Switching</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">PNETLab</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Packet Tracer</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">GNS3</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Programming & Certs -->
+                <!-- Right Column: SysAdmin, Programming & Certifications -->
                 <div class="space-y-10">
+                    <!-- SysAdmin & Virtualization -->
                     <div data-aos="fade-up" data-aos-delay="200">
                         <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-shield-check text-2xl"></i></div>
+                            SysAdmin & Virtualization
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Proxmox</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">VMware</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Docker</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">VirtualBox</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Linux (Ubuntu Server)</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Nginx & Apache</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Prometheus & Grafana</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">BIND9</span>
+                            <span class="px-4 py-2 bg-white dark:bg-darkBgsec text-textmain dark:text-darkTextmain font-medium rounded-full border-2 border-bordercolor dark:border-darkBordercolor hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-md transition-all cursor-default">Bash scripting</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Automation -->
+                    <div data-aos="fade-up" data-aos-delay="250">
+                        <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
                             <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-code text-2xl"></i></div>
-                            Programming
+                            Programming & Automation
                         </h3>
                         <div class="flex flex-wrap gap-3">
                             <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">Python</span>
                             <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">C++</span>
                             <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">C Language</span>
+                            <span class="px-4 py-2 bg-textmain dark:bg-darkBgsec text-white dark:text-darkTextmain font-mono rounded border-2 border-textmain dark:border-darkBordercolor hover:bg-accent hover:border-accent dark:hover:border-accent hover:-translate-y-1 hover:shadow-lg transition-all cursor-default">SQL</span>
                         </div>
                     </div>
+
+                    <!-- Certifications -->
                     <div data-aos="fade-up" data-aos-delay="300">
                         <h3 class="text-2xl font-bold text-textmain dark:text-darkTextmain mb-6 flex items-center">
                             <div class="p-2 bg-orange-100 dark:bg-orange-950/30 rounded-lg mr-3 text-accent"><i class="ph ph-certificate text-2xl"></i></div>

@@ -13,11 +13,15 @@ currently, im working on :
 
 Tools that im workin
 
-Networking & Security     : Cisco, MikroTik, Sophos, UniFi
+IoT & Embedded Systems    : Arduino, Microcontrollers, Sensors Integration (GPS, Compass, Ultrasonic), PID Control
 
-System & Virtualization   : Proxmox
+Networking & Security     : Cisco, MikroTik, Sophos, UniFi, Routing & Switching
 
-Programming & Automation  : Python, C++, SQL
+System & Virtualization   : Proxmox, VMware, Docker, VirtualBox, Linux (Ubuntu Server)
+
+SysAdmin & Monitoring     : Nginx, Apache, Prometheus, Grafana, BIND9, Bash scripting
+
+Programming & Automation  : Python, C++, C, SQL
 
 📫 reach me via :
 
