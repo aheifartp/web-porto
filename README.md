@@ -13,7 +13,7 @@ currently, im working on :
 
 Tools that im workin
 
-IoT & Embedded Systems    : Arduino, Microcontrollers, Sensors Integration (GPS, Compass, Ultrasonic), PID Control
+IoT & Embedded Systems    : Arduino, ESP32, MQTT, 3D Design, LoRA, Node-RED, Blynk, OpenCV
 
 Networking & Security     : Cisco, MikroTik, Sophos, UniFi, Routing & Switching
 
