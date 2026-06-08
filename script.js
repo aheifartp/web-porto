@@ -123,10 +123,10 @@ function initTypingEffect() {
     if (!typeTarget) return;
 
     const words = [
-        "Undergraduate Computer Engineering",
-        "Network Operations & Support",
-        "IT Infrastructure Developer",
-        "IoT & Hardware Integrator"
+        "IoT Developer",
+        "Embedded Systems Builder",
+        "Computer Engineering Student",
+        "IoT Developer & Embedded Systems Builder"
     ];
     
     let wordIndex = 0;
