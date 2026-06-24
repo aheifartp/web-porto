@@ -1,30 +1,36 @@
-# web-porto
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Hi there 👋
+## Getting Started
 
-Hello im rafie, I am an IT professional with a strong foundation in network operations, system administration, and infrastructure integration. I am passionate about designing secure, scalable, and business-aligned technology solutions, combining robust infrastructure management with hands-on problem-solving.
+First, run the development server:
 
-currently, im working on :
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Actively working in network operations an Staff IT Infrastructure.
-- Developing my personal portfolio website to showcase my case studies and technical projects.
-- Preparing my final thesis focusing on data centers, networking, and security.
-- Expanding my professional certifications (currently pursuing CCNA; MTCNA certified).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Tools that im workin
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-IoT & Embedded Systems    : Arduino, ESP32, MQTT, 3D Design, LoRA, Node-RED, Blynk, OpenCV
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Networking & Security     : Cisco, MikroTik, Sophos, UniFi, Routing & Switching
+## Learn More
 
-System & Virtualization   : Proxmox, VMware, Docker, VirtualBox, Linux (Ubuntu Server)
+To learn more about Next.js, take a look at the following resources:
 
-SysAdmin & Monitoring     : Nginx, Apache, Prometheus, Grafana, BIND9, Bash scripting
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Programming & Automation  : Python, C++, C, SQL
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-📫 reach me via :
+## Deploy on Vercel
 
-LinkedIn: [www.linkedin.com/in/rafiehabibi](http://www.linkedin.com/in/rafiehabibi)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Email: [mrafiehabibi01@gmail.com](mailto:mrafiehabibi01@gmail.com)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
