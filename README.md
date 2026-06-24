@@ -3,7 +3,7 @@
 A modern, interactive personal portfolio website showcasing my experience, skills, and projects in IoT, Networking, and Software Development. Originally built with vanilla HTML/CSS/JS, this project has been fully migrated to a component-driven architecture using **Next.js** and **React** for better performance, modularity, and scalability.
 
 ## 🚀 Live Demo
-rafiehabibi.my.id
+https://rafiehabibi.my.id
 
 ## 🛠 Tech Stack
 
